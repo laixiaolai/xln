@@ -1,0 +1,80 @@
+//
+//  FanweApp.pch
+//  FanweApp
+//
+//  Created by xfg on 16/2/15.
+//  Copyright © 2016年 xfg. All rights reserved.
+//
+
+#define FanweApp_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+
+#import "AppchangeHeader.h"
+
+// 系统
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+// 直播SDK
+#import <ImSDK/ImSDK.h>
+#import <TLSSDK/TLSHelper.h>
+#import <QALSDK/QalSDKProxy.h>
+#import "TIMAdapter.h"
+// 第三方
+#import "AFNetworking.h"
+#import "MBProgressHUD.h"
+#import "MJExtension.h"
+#import <UMSocialCore/UMSocialCore.h>
+#import "Masonry.h"
+#import "IQKeyboardManager.h"
+#import "XXNibConvention.h" // xib桥接 第三方
+#import "SVProgressHUD.h"
+#import "CCWebViewController.h"
+#import "TWMessageBarManager.h"
+#import "FLAnimatedImageView.h"
+#import "BlocksKit.h"
+#import "BlocksKit+UIKit.h"
+#import "FTAnimation.h"
+#import "SDWebImageHeaders.h"
+#import "KVOController.h"
+#import "HMSegmentedControl.h"
+#import "WXApi.h"
+#import <AlipaySDK/AlipaySDK.h>
+#import "WXApiObject.h"
+#import "MMSheetView.h"
+
+// 自定义
+#import "FWGeneralHeader.h"
+#import "FWBaseHeader.h"
+#import "CommonLibrary.h"
+#import "AppModelHeader.h"
+#import "AppDelegate.h"
+#import "FWIMMsgHandler.h"
+#import "FWIMPrivateMsgHandler.h"
+#import "dataModel.h"
+#import "LiveHeader.h"
+#import "MainHeader.h"
+#import "MusicTotalHeader.h"
+#import "FWMainWebViewController.h"
+#import "FWNavigationController.h"
+#import "FWTabBarController.h"
+#import "UIView+UIView_ZCExtension.h"
+
+//BMK
+#import "STBMapKitHeader.h"
+#import "PopMenuHeader.h"
+
+//状态栏
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+#define StatusHight  [[UIApplication sharedApplication] statusBarFrame].size.height
+#define StatusAndNaviBarHeight (StatusHight+44)
+#define SafeAreaBottomHeight (SCREEN_HEIGHT == 812.0 ? 34 : 0)
+#define ZCRGBColor(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+#define ZCWeake __weak __typeof__(self) weakSelf = self;
+#define kadjust(x) ceil((SCREEN_WIDTH/375.0)*x)
+#endif

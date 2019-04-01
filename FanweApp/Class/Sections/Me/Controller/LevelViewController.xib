@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LevelViewController">
+            <connections>
+                <outlet property="lTips" destination="VIZ-aE-pAc" id="ByL-WO-cg1"/>
+                <outlet property="lTitle" destination="MuE-lX-V2L" id="oxL-IX-aqr"/>
+                <outlet property="levelProgress" destination="1lL-Zj-abo" id="coH-bC-qSW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me_level_Bg" translatesAutoresizingMaskIntoConstraints="NO" id="G4O-yL-vO8">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me_level_title" translatesAutoresizingMaskIntoConstraints="NO" id="H8s-xa-n5X">
+                    <rect key="frame" x="67" y="45" width="240" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="Htg-gH-K6c"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MuE-lX-V2L">
+                    <rect key="frame" x="125.5" y="62" width="123" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="123" id="sgL-8S-saG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <color key="textColor" red="0.99856823679999995" green="0.32270258670000002" blue="0.32296496629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="me_level_logo" translatesAutoresizingMaskIntoConstraints="NO" id="ZVH-QT-LOs">
+                    <rect key="frame" x="65" y="125" width="244" height="198"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="198" id="dnq-0v-mlB"/>
+                    </constraints>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="观看直播就可以获得经验值哦想自己直播？没问题，直播经验更加多，不想等待？礼物刷起来，刷得越多，升级越快。" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VIZ-aE-pAc">
+                    <rect key="frame" x="67" y="394" width="242" height="76"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="76" id="AVR-Ep-Dlq"/>
+                    </constraints>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1lL-Zj-abo">
+                    <rect key="frame" x="111.5" y="353" width="150" height="2"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="8Gq-Qi-ao3"/>
+                    </constraints>
+                </progressView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="G4O-yL-vO8" secondAttribute="bottom" id="16M-Je-gQX"/>
+                <constraint firstItem="G4O-yL-vO8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1UN-Ju-aKq"/>
+                <constraint firstAttribute="trailing" secondItem="G4O-yL-vO8" secondAttribute="trailing" id="F1h-JT-nco"/>
+                <constraint firstItem="H8s-xa-n5X" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="67" id="JLc-uh-L3A"/>
+                <constraint firstItem="ZVH-QT-LOs" firstAttribute="centerX" secondItem="MuE-lX-V2L" secondAttribute="centerX" id="P9v-qW-Ezb"/>
+                <constraint firstItem="MuE-lX-V2L" firstAttribute="centerX" secondItem="G4O-yL-vO8" secondAttribute="centerX" id="Rur-V1-LIG"/>
+                <constraint firstItem="ZVH-QT-LOs" firstAttribute="centerX" secondItem="VIZ-aE-pAc" secondAttribute="centerX" constant="-1" id="Y5c-ci-N9I"/>
+                <constraint firstItem="ZVH-QT-LOs" firstAttribute="top" secondItem="H8s-xa-n5X" secondAttribute="bottom" constant="20" id="a4N-dd-MkR"/>
+                <constraint firstItem="H8s-xa-n5X" firstAttribute="trailing" secondItem="VIZ-aE-pAc" secondAttribute="trailing" constant="-2" id="axH-Zx-gC6"/>
+                <constraint firstItem="G4O-yL-vO8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hRO-Va-ySN"/>
+                <constraint firstItem="ZVH-QT-LOs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="65" id="i4W-H6-Y0V"/>
+                <constraint firstItem="MuE-lX-V2L" firstAttribute="top" secondItem="H8s-xa-n5X" secondAttribute="top" constant="17" id="i6h-Dd-qbH"/>
+                <constraint firstItem="1lL-Zj-abo" firstAttribute="top" secondItem="ZVH-QT-LOs" secondAttribute="bottom" constant="30" id="jhn-Mt-rQh"/>
+                <constraint firstAttribute="trailing" secondItem="G4O-yL-vO8" secondAttribute="trailing" id="lwQ-u5-ptx"/>
+                <constraint firstItem="1lL-Zj-abo" firstAttribute="centerX" secondItem="ZVH-QT-LOs" secondAttribute="centerX" id="m3j-NM-Pan"/>
+                <constraint firstItem="H8s-xa-n5X" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="45" id="ngK-B7-TeQ"/>
+                <constraint firstItem="VIZ-aE-pAc" firstAttribute="top" secondItem="1lL-Zj-abo" secondAttribute="bottom" constant="39" id="sxK-rh-Obs"/>
+                <constraint firstItem="H8s-xa-n5X" firstAttribute="centerX" secondItem="G4O-yL-vO8" secondAttribute="centerX" id="vG0-MB-dRI"/>
+            </constraints>
+            <point key="canvasLocation" x="28.5" y="48.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="me_level_Bg" width="1080" height="2124"/>
+        <image name="me_level_logo" width="700" height="564"/>
+        <image name="me_level_title" width="470" height="183"/>
+    </resources>
+</document>
