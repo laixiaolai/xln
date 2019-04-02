@@ -373,14 +373,14 @@ static SystemSoundID shake_sound_male_id = 0;
 {
     GlobalVariables *fanweApp = [GlobalVariables sharedInstance];
     //NSString *privkey;
-    privateKey=[NSString stringWithFormat:@"%@%@%@%@",dKey,fanweApp.aesKeyStr,Idfv,@"ShitFuckRiGanCao......"];
+    privateKey=[NSString stringWithFormat:@"%@%@%@%@",dKey,fanweApp.aesKeyStr,Idfv,@"qingrenmi@20190329......"];
 }
 
 - (void)resetKey
 {
     GlobalVariables *fanweApp = [GlobalVariables sharedInstance];
     //NSString *privkey;
-    privateKey=[NSString stringWithFormat:@"%@%@%@",fanweApp.aesKeyStr,Idfv,@"ShitFuckRiGanCao..."];
+    privateKey=[NSString stringWithFormat:@"%@%@%@",fanweApp.aesKeyStr,Idfv,@"qingrenmi@20190329..."];
 }
 #pragma mark - ----------------------- 初始化接口 -----------------------
 #pragma mark 异步加载初始化接口

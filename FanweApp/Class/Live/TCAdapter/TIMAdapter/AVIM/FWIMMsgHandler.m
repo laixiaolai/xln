@@ -193,7 +193,7 @@ FanweSingletonM(Instance);
 //设置签名
 - (NSString *)verificationKey:(NSString *)prefix
 {
-    return [FWMD5UTils getmd5WithString:[NSString stringWithFormat:@"%@%@",prefix,@"ShitFuckRiGanCao..."]];
+    return [FWMD5UTils getmd5WithString:[NSString stringWithFormat:@"%@%@",prefix,@"qingrenmi@20190329..."]];
 }
 #pragma mark - ----------------------- 发送自定义消息 -----------------------
 #pragma mark 组装TIMCustomElem
